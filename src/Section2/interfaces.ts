@@ -61,7 +61,7 @@ console.log('picture : ', picture);
 
 // Interfaz: usuario
 interface User {
-    readonly id: number; // solo lectura
+    readonly id: number; // solo lectura, por ejm bd crea se deja ingresar pero ay despues no se deja modificar ejm cedula
     username: string;
     isPro: boolean
 }
