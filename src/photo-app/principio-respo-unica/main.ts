@@ -31,3 +31,18 @@ user.removeAlbum(album);
 console.log('UserAfter', user);
 
 // tsc --project myFolder --watch
+
+// Resolviendo módulos
+/*
+Resolviendo Modulos: Typescript resuelve la ubicacion de modulos observando referencias relativas y no relativas.
+Posteriormente intenta localizar el modulo usando una estrategia de resolucion de modulos.
+    tsc --moduleResolution node
+    tsc --moduleResolution classic
+
+diferencias
+node: Modulos CommonJs o UMD, mas opciones de configuración
+classic: Modulos AMD, System, ES2015, poco configurable en tsconfig.json
+
+"traceResolution": true,                  // TS mira u observa el comportamiento de los modulos para buscarlos y dice si es classic o node 
+
+*/
